@@ -14,7 +14,7 @@ class UI {
     this.location.textContent = weather.city.name
     this.desc.textContent = weather.list[0].weather[0].description
     this.string.textContent = weather.list[0].main.temp
-    this.icon.setAttribute('src', `http://openweathermap.org/img/w/${weather.list[0].weather[0].icon}.png`)
+    this.icon.setAttribute('src', `https://openweathermap.org/img/w/${weather.list[0].weather[0].icon}.png`)
     this.humidity.textContent = `Relative humidity: ${weather.list[0].main.humidity} `
     this.feelsLike.textContent = `Max temp: ${weather.list[0].main.temp_max} `
     this.dewpoint.textContent = `Min temp: ${weather.list[0].main.temp_min} `
