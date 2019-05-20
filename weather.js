@@ -8,7 +8,6 @@ class Weather {
     const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${this.city},${this.state}&units=metric&APPID=${this.apiKey}`)
     const resData = await response.json()
     return resData
-
   }
   changeLocation(city, state) {
     this.city = city
